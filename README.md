@@ -2,13 +2,18 @@
 Week 10 Makers Project
 
 Approach:
-Using TDD to write tests for features before implementing the feature itself. 
+Using TDD to write tests for features before implementing the feature itself. Code is structured logically, with the methods and tests happening in the same order. 
+
 Created in Ruby, tested with Rspec.  
 
 To run:
 ```
 bundle install
 ```
+
+To run tests:
+```rspec``` to show functionality  
+```rubocop``` to show code clarity and style
 
 
 Acceptance criteria:  
