@@ -3,6 +3,7 @@ Week 10 Makers Project
 
 Approach:
 Using TDD to write tests for features before implementing the feature itself. 
+Created in Ruby, tested with Rspec.  
 
 To run:
 ```
