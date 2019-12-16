@@ -17,5 +17,5 @@ class Account
   def statement
     @balance
   end
-  
+
 end
