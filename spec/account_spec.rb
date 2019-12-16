@@ -16,11 +16,11 @@ describe Account do
 
   end
 
-  describe 'customer can view a statement' do
+  describe 'customer can view their statement' do
     it 'shows an updated balance' do
       subject.deposit(10)
       subject.withdrawal(5)
-      expect(subject.statement).to eq(5)
+      expect(subject.show_statement).to eq(5)
     end
 
   end
