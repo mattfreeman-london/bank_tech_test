@@ -9,4 +9,7 @@ describe Account do
     expect{ subject.deposit(10) }.to change{ subject.balance }.by 10
   end
 
+  it 'allows you to make a withdrawal' do
+    expect{ subject.withdrawal(10) }.to change{ subject.balance }.by -10
+  end
 end
