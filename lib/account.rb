@@ -2,7 +2,7 @@
 
 # this is the class for managing the account
 class Account
-    DEFAULT_BALANCE = 0
+  DEFAULT_BALANCE = 0
   attr_reader :account_activity
 
   def initialize

@@ -1,9 +1,7 @@
 # frozen_string_literal: true
 
-# class to create and format statements for the account
-
 require_relative 'account.rb'
-
+# class to create and format statements for the account
 class Display
   def initialize(account)
     @account = account
