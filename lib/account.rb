@@ -2,10 +2,11 @@
 
 # this is the class for managing the account
 class Account
-  attr_reader :account_activity, :balance
+    DEFAULT_BALANCE = 0
+  attr_reader :account_activity
 
   def initialize
-    @balance = 0
+    @balance = DEFAULT_BALANCE
     @account_activity = []
   end
 
@@ -14,20 +15,12 @@ class Account
   end
 
   def deposit(amount)
-    @balance += amount
-    @account_activity << "#{current_date} || #{amount} || || #{@balance}"
-  end
-
-  def withdrawal(amount)
-    @balance -= amount
-    @account_activity << "#{current_date} || || #{amount} || #{@balance}"
-  end
-
-  def show_balance
+    @account_activity << "#{current_date} || #{amount} || || #{@balance += amount}"
     @balance
   end
 
-  def print_statement
-    "Date || Credit || Debit || Balance\n#{@account_activity.reverse.join('\n')}"
+  def withdrawal(amount)
+    @account_activity << "#{current_date} || || #{amount} || #{@balance -= amount}"
+    @balance
   end
 end
